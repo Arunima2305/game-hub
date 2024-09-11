@@ -1,38 +1,93 @@
-.App {
+/* Resetting default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Applying a consistent font across the entire app */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #548687;
+  
+}
+
+/* Styling for the main container of the app */
+.app {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Heading styles */
+h1, h2 {
+  font-size: 30px;
+  color: whitesmoke;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* General button styles */
+button {
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 5px;
+  border: 2px solid #548687;
+  background-color: wheat;
+ 
+  padding: 10px 20px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover {
+  background-color: #b0413e;
+  color: wheat;
+}
+
+/* Styles for the container that wraps the entire application */
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 10px;
+  background:transparent;
+  box-shadow: none;
+  border-radius: none;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styling the links (used for navigation) */
+a {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style adjustments for specific component classes */
+.status {
+  font-size: 24px;
+  color: wheat;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Adding responsiveness */
+@media (max-width: 600px) {
+  h1, h2 {
+      font-size: 24px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container {
+      width: 90%;
+      margin: 20px auto;
+  }
+
+  button {
+      width: 100%;
+      margin: 10px 0;
   }
 }

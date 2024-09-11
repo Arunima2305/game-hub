@@ -1,0 +1,145 @@
+.connect-four {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(7, 60px);
+    grid-template-rows: repeat(6, 60px);
+    gap: 5px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  h2 {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .cell {
+    width: 60px;
+    height: 60px;
+    background-color: #00b4d8;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cell.red {
+    background-color: red;
+  }
+  
+  .cell.yellow {
+    background-color: yellow;
+  }
+  
+  .reset-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+  }
+  
+  .reset-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .message {
+    font-size: 15 rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    color:#ffffff;
+    
+  }
+  
+  /* Popup Styling */
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .popup h2 {
+    margin-bottom: 20px;
+  }
+  
+  .mode-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #0077b6;
+    background-color: #0077b6;
+    color: white;
+  }
+  
+  .mode-button:hover {
+    background-color: #005f8b;
+  }
+  
+  .start-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+  
+  .start-button:hover {
+    background-color: #45a049;
+  }
+  
+  .popup input {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  .winner-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: green;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    color: wheat;
+    text-align: center;
+}
+
+.winner-popup h2 {
+    margin-bottom: 15px;
+}
+
+.play-again-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.play-again-button:hover {
+    background-color: #333;
+}
